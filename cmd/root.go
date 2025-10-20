@@ -88,7 +88,7 @@ func run() error {
 		if err := t.PermTelnet(); err != nil {
 			return err
 		} else {
-			fmt.Println("Permanent Telnet succeed\r\nuser: root, pass: Zte521")
+			fmt.Println("Permanent Telnet succeed\r\nuser: root, pass: Zte521\n")
 		}
 
 		// reboot device
@@ -98,7 +98,7 @@ func run() error {
 			return err
 		}
 	} else {
-		fmt.Printf("user: %s\npass: %s", tlUser, tlPass)
+		fmt.Printf("user: %s\npass: %s\n", tlUser, tlPass)
 	}
 	return nil
 }
